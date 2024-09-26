@@ -1,0 +1,52 @@
+.nav {
+    background-color: #333;
+    position: relative;
+}
+
+.toggleMenu {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuItem a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menuItem a:hover {
+    background-color: #575757;
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .toggleMenu:checked+.hamburger+.menu {
+        display: flex;
+    }
+
+    .menuItem {
+        text-align: center;
+    }
+}

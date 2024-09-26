@@ -1,0 +1,20 @@
+.replyForm {
+    margin-top: 20px;
+}
+
+.replyForm textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+.formFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.formFooter button {
+    padding: 10px 20px;
+}
